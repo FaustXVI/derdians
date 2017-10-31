@@ -1,6 +1,5 @@
-with import <nixpkgs> {};
-rec {
-    pgf = stdenv.mkDerivation {
+nixpkgs : with import nixpkgs {};
+stdenv.mkDerivation {
         name = "pgffor-sandbox";
         buildInputs = [
             unzip
@@ -22,5 +21,4 @@ rec {
             mkdir $out
             cp -r texmf $out
         '';
-    };
 }
