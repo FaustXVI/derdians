@@ -42,7 +42,6 @@ LATEX = latex
 MKDIR = mkdir -p
 TOUCH = touch
 ##### Cibles ###############
-
 pdf : $(PDF)
 
 #pour la cible pdf on doit avoir genere un pdf
