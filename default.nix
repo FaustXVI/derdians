@@ -12,7 +12,7 @@ let
 in
 stdenv.mkDerivation {
         name = "latex-sandbox";
-        TEXMFHOME="${pgf}/texmf"; 
+        TEXMFHOME="${pgf}/${pgf.TEXMFHOME}"; 
         buildInputs = [
             tetex
         ];
