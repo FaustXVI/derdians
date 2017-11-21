@@ -4,10 +4,14 @@
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
+\usepackage{pgffor}
+ 
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+\foreach \n in {1,2}{
 
 \section{Les Derdians}
 
@@ -63,6 +67,7 @@ Le peuple Derdians est un peuple solidaire. Si un Derdians est insulté, les aut
  \emph{Les Derdians communiquent plus par le toucher que par la parole. Ils sont peu bavards. Ne pas toucher quelqu'un lorsqu'on lui adresse la parole ou ne pas saluer une personne que l'on croise est très grossier et énerve les Derdians au plus haut point (ils se mettent à crier).}
 
 \pagebreak
+}
  
 \section{Les ingénieurs}
 
